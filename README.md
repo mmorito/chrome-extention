@@ -1,4 +1,4 @@
-# chrome-extention
+# message-exchange-extention
 
 - 別ドメインの親ウインドウからウインドウと双方向メッセージングをするための Chrome 拡張機能
 - 以下のような要件を実装しようとした時、アプリの window.opener などでは限界があったため、試しに作成してみた
