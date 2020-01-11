@@ -1,7 +1,7 @@
 $(function() {
   // 現在アクティブなタブに指示
   function sendToContents(method) {
-    chrome.extension.sendRequest({ method: method }, function(response) {
+    chrome.extension.sendMessage({ method: method }, function(response) {
       console.log(response);
     });
   }

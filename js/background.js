@@ -2,7 +2,8 @@ var methods = {
   sendMain: sendMain,
   sendSub: sendSub,
   onOpenMain: onOpenMain,
-  onCloseMain: onCloseMain
+  onCloseMain: onCloseMain,
+  openSub: openSub
 };
 
 // main or sub からのメッセージを受け取る
@@ -116,7 +117,7 @@ function getSub(sendResponse) {
 }
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-  if (tab.url.indexOf(ariaUri) < 0) return;
+  if (tab.url.indexOf(subUrl) < 0) return;
   refreshTabs({}).then(tabs => {
     console.log("window updated. url: " + tab.url);
     chrome.tabs.sendMessage(

@@ -19,7 +19,7 @@
     }
   ],
   "background": {
-    "scripts": ["js/background.js"]
+    "scripts": ["js/const.js", "js/background.js"]
   },
   "permissions": ["activeTab", "tabs", "contextMenus"]
 }
