@@ -10,12 +10,12 @@
   "content_scripts": [
     {
       "matches": ["https://main.web-site.org/*"],
-      "js": ["lib/jquery.min.js", "js/main.js"]
+      "js": ["js/const.js", "js/main.js"]
     },
     {
       "matches": ["*://*/"],
       "include_globs": ["127.0.0.1:4200"],
-      "js": ["lib/jquery.min.js", "js/sub.js"]
+      "js": ["js/const.js", "js/sub.js"]
     }
   ],
   "background": {
